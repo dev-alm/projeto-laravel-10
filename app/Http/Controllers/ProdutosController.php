@@ -9,7 +9,7 @@ class ProdutosController extends Controller
 {
     public function index () {
         $findProduto = Produto::all();
-        dd($findProduto);
-        return 'produtos';
+       
+        return view('pages.produtos.paginacao', compact('findProduto'));
     }
 }
