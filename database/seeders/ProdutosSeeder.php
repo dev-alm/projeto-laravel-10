@@ -13,11 +13,24 @@ class ProdutosSeeder extends Seeder
      */
     public function run(): void
     {
-        Produto::create(
-            [
+        Produto::create([
                 'nome' => 'Gustavo Almeida',
                 'valor' => '20.00'
-            ]
-         );
+            ]);
+
+            Produto::create([
+                'nome' => 'Sr Incrível',
+                'valor' => '40.00'
+            ]);
+
+            Produto::create([
+                'nome' => 'Patrick Estrela',
+                'valor' => '11.00'
+            ]);
+
+            Produto::create([
+                'nome' => 'Shrek',
+                'valor' => '32.00'
+            ]);
     }
 }
